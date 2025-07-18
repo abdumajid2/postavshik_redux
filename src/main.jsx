@@ -9,10 +9,9 @@ import { store } from './store/store.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter fallback={'Loading...'}>
-    <Provider store={store}>
-
-    <App />
-    </Provider>
+      <Provider store={store}>
+        <App />
+      </Provider>
     </BrowserRouter>
   </StrictMode>,
 )
