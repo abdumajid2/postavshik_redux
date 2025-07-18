@@ -1,5 +1,5 @@
 import React from "react"
-import Get from "../../getComponent/get"
+import Get from 
 import C1 from "../../components/c1/c1"
 import Footer from "../../components/footer/footer"
 
