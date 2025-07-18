@@ -36,7 +36,27 @@ export default function Category() {
             <h1 className="text-center text-[20px]">{e.name}</h1>
             <div className="flex gap-[20px] justify-between px-[20px]">
               <button className="w-[50px] h-[50px] border" onClick={() => dispatch(decreament())} >-</button>
-              <Link to={`/info${e.id}`}>
+              <Link to={`/info/${e.id}`}>
+                <button className="w-[50px] h-[50px] border"><h1>{count}</h1></button>
+              </Link>
+              <button className="w-[50px] h-[50px] border" onClick={() => dispatch(increament())}>+</button>
+              <button className="w-[50px] h-[50px] border bg-[red]" onClick={() => dispatch(deleteUser(e.id))}>🗑️</button>
+            </div>
+
+
+          </div>
+        )
+      })}</div>
+
+
+      <div className="flex flex-wrap gap-[20px]">{data.map((e) => {
+        return (
+          <div key={e.id} className="w-[280px] h-[487px] flex flex-col gap-[20px] items-center">
+            <img src={e.img} alt="" />
+            <h1 className="text-center text-[20px]">{e.name}</h1>
+            <div className="flex gap-[20px] justify-between px-[20px]">
+              <button className="w-[50px] h-[50px] border" onClick={() => dispatch(decreament())} >-</button>
+              <Link to={`/info/${e.id}`}>
                 <button className="w-[50px] h-[50px] border"><h1>{count}</h1></button>
               </Link>
               <button className="w-[50px] h-[50px] border" onClick={() => dispatch(increament())}>+</button>
@@ -54,25 +74,7 @@ export default function Category() {
             <h1 className="text-center text-[20px]">{e.name}</h1>
             <div className="flex gap-[20px] justify-between px-[20px]">
               <button className="w-[50px] h-[50px] border" onClick={() => dispatch(decreament())} >-</button>
-              <Link to={`/info${e.id}`}>
-                <button className="w-[50px] h-[50px] border"><h1>{count}</h1></button>
-              </Link>
-              <button className="w-[50px] h-[50px] border" onClick={() => dispatch(increament())}>+</button>
-              <button className="w-[50px] h-[50px] border bg-[red]" onClick={() => dispatch(deleteUser(e.id))}>🗑️</button>
-            </div>
-
-
-          </div>
-        )
-      })}</div>
-      <div className="flex flex-wrap gap-[20px]">{data.map((e) => {
-        return (
-          <div key={e.id} className="w-[280px] h-[487px] flex flex-col gap-[20px] items-center">
-            <img src={e.img} alt="" />
-            <h1 className="text-center text-[20px]">{e.name}</h1>
-            <div className="flex gap-[20px] justify-between px-[20px]">
-              <button className="w-[50px] h-[50px] border" onClick={() => dispatch(decreament())} >-</button>
-              <Link to={`/info${e.id}`}>
+              <Link to={`/info/${e.id}`}>
                 <button className="w-[50px] h-[50px] border"><h1>{count}</h1></button>
               </Link>
               <button className="w-[50px] h-[50px] border" onClick={() => dispatch(increament())}>+</button>
