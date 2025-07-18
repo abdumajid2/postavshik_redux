@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { deleteUser, editUser, addNewUser } from "./getTodolist"
+import { deleteUser, editUser, addNewUser } from "../store/todoBobojon"
 import { Button } from "@mui/material"
 import Dialog from "@mui/material/Dialog"
 import DialogActions from "@mui/material/DialogActions"

@@ -1,7 +1,7 @@
 import React from "react"
-import Get from 
-import C1 from "../../components/c1/c1"
-import Footer from "../../components/footer/footer"
+import Get from "../../store/get"
+import C1 from '../../store/get'
+
 
 const Politica = () => {
   return (
@@ -102,9 +102,7 @@ const Politica = () => {
         <Get />
       </div>
 
-      <div>
-        <Footer />
-      </div>
+      
     </>
   )
 }

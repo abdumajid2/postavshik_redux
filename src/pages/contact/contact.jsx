@@ -1,7 +1,8 @@
 import React from "react"
-import Get from "../../getComponent/get"
+import Get from '../../store/get'
+import 
 
-import CoC1 from "./kontactiC/kontactiC1"
+
 
 const Contact = () => {
   return (
